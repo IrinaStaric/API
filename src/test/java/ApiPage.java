@@ -4,8 +4,8 @@ import io.restassured.response.Response;
 import org.apache.commons.codec.binary.Base64;
 public class ApiPage {
     private static final String BaseURI = "https://dev.emeli.in.ua/wp-json/wp/v2/posts";
-    private static String Username = "admin";
-    private static String Password = "Engineer_123";
+    private static String Username = "username";
+    private static String Password = "Password";
 
     public ApiPage() {
         initialize();
