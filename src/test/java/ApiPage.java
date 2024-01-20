@@ -10,7 +10,7 @@ public class ApiPage {
     public ApiPage() {
         initialize();
     }
-    public ApiPage(String baseUri, String username, String password) {
+    public ApiPage (String baseUri, String username, String password) {
         RestAssured.baseURI = baseUri;
         Username = username;
         Password = password;
@@ -26,7 +26,7 @@ public class ApiPage {
                 "}";
         return RestAssured.given()
                 .header("Content-Type", ContentType.JSON)
-                .header("Authorization", "Basic" + getEncodedCredentials())
+                .header("Authorization", "Basic " + getEncodedCredentials())
                 .body(requestBody)
                 .post();
                 }

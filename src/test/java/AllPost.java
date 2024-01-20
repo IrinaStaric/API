@@ -35,19 +35,5 @@ public class AllPost {
         assertThat(response.jsonPath().getList("title.rendered")).allSatisfy(title ->
                 softly.assertThat(title).isNotNull()
         );
-
-        /* Logging the "type.post" values for investigation
-        List<String> types = response.jsonPath().getList("type.post");
-        System.out.println("Types: " + types);
-
-        assertThat(types).allSatisfy(type -> {
-            softly.assertThat(type)
-                    .withFailMessage("Type is null at index %d", types.indexOf(type))
-                    .isNotNull();
-
-            softly.assertThat(type)
-                    .withFailMessage("Type does not equal 'post' at index %d", types.indexOf(type))
-                    .isEqualTo("post");
-        });*/
     }
 }
