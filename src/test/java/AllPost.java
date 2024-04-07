@@ -11,7 +11,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class AllPost {
     private static final String post_add_Point = "/wp-json/wp/v2/posts";
-    public static final String based_URL = "https://dev.emeli.in.ua/";
+    public static final String based_URL = "https:";
 
     @BeforeAll
     public static void setUp() {
