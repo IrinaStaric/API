@@ -3,7 +3,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.apache.commons.codec.binary.Base64;
 public class ApiPage {
-    private static final String BaseURI = "https://dev.emeli.in.ua/wp-json/wp/v2/posts";
+    private static final String BaseURI = "https://website_name/wp-json/wp/v2/posts";
     private static String Username = "username";
     private static String Password = "Password";
 
